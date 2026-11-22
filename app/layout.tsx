@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { asset } from '@/lib/config';
 import ServiceWorkerRegister from '@/components/ServiceWorkerRegister';
 import './globals.css';
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   title: 'Annotation Carryover',
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         {children}
         <ServiceWorkerRegister />
       </body>
+      <Analytics />
     </html>
   );
 }

@@ -13,6 +13,7 @@
     "test": "tsx test/test.ts && tsx test/test-short.ts"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "next": "^16.4.6",
     "pdf-lib": "1.17.1",
     "pdfjs-dist": "4.10.38",
